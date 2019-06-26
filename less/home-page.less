@@ -2,69 +2,93 @@
   box-sizing: border-box;
 }
 
-.container{
-    max-width: 95%;
-
-    // .mainimg{
-    //     display: flex;
-    //     flex-flow:row wrap;
-    //     .wholesome{
-    //         width:500px;
-    //         height:300px;
-    //         padding:25px;
-    //     }
-    //     .mainText{
-    //         width:250px;
-    //         padding-top:70px;
-    //     }
-    // }
+.container {
+  max-width: 95%;
+  // .mainimg{
+  //     display: flex;
+  //     flex-flow:row wrap;
+  //     .wholesome{
+  //         width:500px;
+  //         height:300px;
+  //         padding:25px;
+  //     }
+  //     .mainText{
+  //         width:250px;
+  //         padding-top:70px;
+  //     }
+  // }
 }
 
- .middle-text {
-      padding: 50px;
+h1 {
+    font-size: 4rem;
+    /* color: #FF8B7B; */
+    margin-bottom: 1rem;
+}
 
-      @media @mobile {
+.btn1{
+  box-shadow: 1px 3px 8px 0px hsla(0,0%,57%,.75);
+
+}
+
+.middle-text {
+  padding: 50px;
+  @media @mobile {
     padding: 20px;
-}
+  }
 }
 
 .middle-section {
   display: flex;
   flex-direction: row-reverse;
   box-shadow: 0 2px 7px 0 hsla(0,0%,57%,.35);
-      margin: 3rem 0;
+  margin: 3rem 0;
   // border: 3px solid red;
+  @media @mobile {
+  flex-direction: column-reverse;
+  }
 }
 
-.middle-text{
+.middle-text {
   // border: 3px solid blue;
 }
-.img2{
-    width: 350px;
-    position: relative;
 
-
+.img2 {
+  width: 450px;
+  // position: absolute;
+  object-fit: cover;
+  @media @tablet {
+    width: 60%;
+    // height: 251px;
+    height: 50%;
+    align-self: center;
+    box-shadow: 0 2px 7px 0 hsla(0,0%,57%,.35);
+  }
+  @media @mobile {
+    width: 100%;
+    height: 100px;
+  }
 }
 
 .bottom-section {
-    margin: 4rem 0;
-    margin-bottom: 8rem;
+  margin: 4rem 0 8rem;
 
-    h4{
-      margin-bottom: 1.5rem;
-    }
+  h4 {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .grid-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  @media @mobile {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
 
-
-    .grid{
-      box-shadow: 0 2px 7px 0 hsla(0,0%,57%,.35);
-      width: 22%;
-      // border: 3px solid red;
-
-
-    }
+  .grid {
+    box-shadow: 0 2px 7px 0 hsla(0,0%,57%,.35);
+    width: 22%;
+    // border: 3px solid red;
+  }
 }
