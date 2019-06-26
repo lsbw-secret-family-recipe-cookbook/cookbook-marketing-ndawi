@@ -215,27 +215,23 @@ nav h1 {
   margin: 3rem 0;
 }
 .img2 {
-  display: block;
-  width: 100%;
-  max-width: 550px;
+  width: 350px;
   position: relative;
 }
 .bottom-section {
   margin: 4rem 0;
   margin-bottom: 8rem;
 }
-ul {
+.bottom-section h4 {
+  margin-bottom: 1.5rem;
+}
+.grid-container {
   display: flex;
   justify-content: space-evenly;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
 }
-ul li {
+.grid-container .grid {
   box-shadow: 0 2px 7px 0 hsla(0, 0%, 57%, 0.35);
-  list-style-type: none;
+  width: 22%;
 }
 .footer {
   margin: 50px 0 0;
@@ -251,11 +247,13 @@ ul li {
 .navEnd {
   display: flex;
   justify-content: space-evenly;
-  margin: 2rem 0;
 }
 .navEnd ul {
   width: 30%;
+  display: flex;
+  flex-direction: row;
 }
 .navEnd ul li {
   list-style: none;
+  width: 1.5rem;
 }
